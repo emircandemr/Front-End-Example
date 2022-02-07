@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Form Oluşturmak </title>
+
+</head>
+    
+<body>
+    
+    <form action="form.html" method="GET">
+        <fieldset>
+            <legend> Kullanıcı Kayıt Bilgileri </legend>
+            <label for="Kullanıcı Adı"> Kullanıcı Adı : </label>
+            <input id="Kullanıcı Adı" type="text" required> <br><br>
+            <label for="Password"> Şifre : </label>
+            <input id="Password" type="password" required > <br><br>
+            E-mail : <input type="email"> <br><br>
+            Fotoğraf : <input type="file"> <br><br>
+            <label>
+                <input type="radio" name="Cinsiyet" value="Erkek"> Erkek
+                <input type="radio" name="Cinsiyet" value="Kadın"> Kadın
+            </label>
+            <br><br>
+            Doğum Tarihi : <input type="date"> <br><br>
+            Yabancı Dil : <input list="YabancıDil" > 
+            <datalist id="YabancıDil">
+                <option value="İngilizce">
+                <option value="Almanca">
+                <option value="Fransızca">
+            </datalist>
+            <br><br>
+            Yabancı Dil Seviyesi : <input type="range" >
+            <br><br>
+            Yazılım Dili : <select name="dil[]">
+                <optgroup label="Front-End Dilleri">
+                    <option vaules="HTML"> HTML </option>
+                    <option vaules="CSS" > CSS </option>
+                    <option vaules="JavaScript"> JS </option>
+                </optgroup>
+                <optgroup label="Back-End Dilleri">
+                    <option vaules="PHP"> PHP </option>
+                    <option vaules="C#"> C# </option>
+                    <option vaules="Python"> Python </option>
+                </optgroup>
+            </select>
+            <br><br>
+            Yazılım Seviyesi : <input type="range"> 
+            <br><br>
+            <label>
+                <input type="checkbox" required > Kuralları Kabul Ediyorum.
+            </label>
+            <br><br>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+
+
+
+</body>
+
+
+</html>

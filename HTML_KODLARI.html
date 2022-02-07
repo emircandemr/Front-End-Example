@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- DOCTYPE yazarak HTML 5 versiyonu aktif ediyoruz-->
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <!-- meta charset komutu ile türkçe karakteri etkinleştiriyoruz-->
+
+        <title>AQ DÜNYA</title>
+        <!-- title ile web adını koyuyoruz-->
+    </head>
+
+    <body>
+        <!-- METİN ETİKETLERİ-->
+        <!-- <div> aaaaabbbbbb </div>  ile yazdığımız yazı tüm satırı kaplar -->
+        <!-- <span> aaaaaabbbbbbbbb </span> ile yazdığın yazılar tek satır arasında boşluk olmaz -->
+        <!-- <p> Burası benim paragrafım. </p>  bu etiket ile paragraf yazısı yani üssten alttan boşluklu yazı -->
+        <!-- <h1> </h1> başlık etiketidir. h1 h2 h3 h4 h5 h6 6 farklı etiketi vardır h1 en önemlisi h6 önemsiz olanıdır. Font boyutu değişiyor kısaca  -->
+        <!-- <b> Emircan </b> b etiketi ile yazıyı kalın yapabilirsin-->
+        <!-- <i></i> ile yazı italik olarak yazılır -->
+        <!-- <mark> Emircan </mark> ile yazıyı vurgulayabilirsin . Highlighter kısaca -->
+        <!-- <small> Emircan </small> ile yazıyı küçülte bilirsin -->
+        <!-- <s> </s> etiketi ile yazının üstünü çizebilirsin -->
+        <!-- PHP Kursum bugüne özel <del> 50tl </del> <ins> 25tl </ins> etiketleri ile 50tl değilde 25 tl demiş olduk yani 50tl nin üzeri çizildi -->
+        <!-- <u> </u> etiketi ile yanlış olan kelimenin altını çizebiliriz -->
+        <!-- <br> etiketi ile alt satıra ineriz -->
+    
+
+        <!-- ALINTILAMA ETİKETLERİ-->
+        <!--
+            <p>
+                Web Standartlarını <abbr title="World Wide Web Consortium" > W3C </abbr> belirler ****** yani abbr etiketi ile W3C kısaltması yaptık title ile etiket üzerine gelince açılımı yazıcak
+            </p>    
+        -->
+        <!-- <p> </p> p etiketi ile tırnak işareti koyarız -->
+        <!-- <blockquote> </blockquote> ile uzun yazılara alıntılama şeklidir. Boşluk fazladır -->
+        
+        <!-- LİNK ETİKETLERİ-->
+        <!--
+            <p>
+                <a href="https://www.google.com.tr/?hl=tr" > buraya tıklayın </a> etiketinin içerine href niteliği ile link etiketi verebiliriz
+                <a href="https://www.google.com.tr/?hl=tr" target="_blank" > buraya tıklayın </a> blank etiketi ile linki yeni sayfada açtırtabiliriz.
+                <a href="https://www.google.com.tr/?hl=tr" title="Google" target="_blank" > buraya tıklayın </a> Title etiketi ile linkin üzerine imleç ile gittiğimizde Google başlığı çıkar.
+            </p>
+        -->
+
+        <!-- İndirme Etiketi-->
+        <!--
+        <p>
+            <a href="resim.jpg" title="Resim 123" target="_blank" download >Resimi indirmek için tıklayın</a>
+        </p>
+        -->
+
+        <!-- Site İçerisinde Linkleme -->
+        <!--
+        <p>   
+            <a href="#DENEME 1"> DENEME 1 <a/>
+            <a href="#DENEME 2"> DENEME 2 <a/>
+            <a href="#DENEME 3"> DENEME 3 <a/>
+        </p>
+
+        <div> id="DENEME1"> DENEME 111 </div>  Burada site içerisinde yönlendirme yapmak istiyorsak href etiketi içindeki # işaretli alan ile div içindeki id içerisindeki isim aynı olmalı ve her biri ayri div içinde olmalı
+        <div> id="DENEME2"> DENEME 222 </div>
+        -->
+
+        <!-- Mail Atma --> 
+        <!--
+            <a href="mailto:emircanndemr@gmail.com"> Mail At </a>
+        --> 
+        
+
+
+
+
+        <!-- Resim Ekleme Etiketi -->
+        <!--
+            <img> img etiketi kendi kendine kapanan etikettir.
+            <img src="resim.jpg" width="500" height="500">
+            <img src="resim.jpg" alt="Bebe Resmi"> alt etiketi ile varsayalım resim yüklenmedi o zman yüklenmediği zaman çıkan yazıdır.
+            <img src="resim.jpg" alt="Resim Yüklenmedi" title="Resim Başlığı" align="left"> align etiketi resimin konumunu belirtir.
+
+        -->
+
+        <!-- Görsele Link VERME -->
+        <!--
+            Görsele link vermek için imgtag'i a taginin içerisinde kullanılır. Yönlendirilmek istenen yerin URL'i a taginin href özelliğine yazılır. Görsel ise a taginin açıklama kısmına eklenir.
+        --> 
+        <!-- ÖRNEK
+            <a href="default.asp">
+                <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+            </a>
+        -->
+
+        <!-- Tablo Etiketi -->
+        <!-- 
+            <table> 
+                <caption> TABLO BAŞLIĞIM </caption> ile Tablo başlığını oluşturabiliriz.
+                <tr> </tr> etiketi ile satırları oluşturuyoruz.
+                <td> </td> etiketi ile sütünları oluşturuyoruz.
+
+                <tr>
+                    <th> Ad </th> ile sütun satır başlıklarını oluşturuyoruz.
+                    <th> Soyad </th> 
+                </tr>
+
+                <tr> 
+                    <td> Emircan </td>
+                    <td> Demir </td>
+                </tr>
+            YADA BÖYLE YAPMAK YERİNE
+            Başlık ile olan etiketleri thead etiketi içerisine
+
+            <thead> 
+                <th> Ad </th> ile Tablo başlıklarını oluşturuyoruz.
+                <th> Soyad </th> 
+            </thead>
+
+            Alt sütün ve satırları ise tbody içerisine yazabilirsin.
+            <tbody>
+                 <tr> 
+                    <td> Emircan </td>
+                    <td> Demir </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr> 
+                    <td colspan="2"> Emircan </td> colspan="2" etiketi ile 2 sütunu birleştirebilirsin.
+                    <td> Demir </td>
+                </tr>
+            -->
+        
+        <!-- LİSTELEME ETİKETLERİ -->
+        <!--
+        <ul> unordered list
+            <li>Sabah 6'da kalk</li>
+            <li>dişlerini fırçala</li>
+            <li>kahve iç</li>
+            <li>kahvaltı yapabilirsin
+                <ul>
+                    <li> yumurta ye</li>
+                    <li> çay iç</li>
+                </ul>
+            </li>
+        </ul>  ul etiketi içerisinde listeleme yapabilirsin ul ile ama nokta şeklinde listeleme yapar. -->
+
+        <!--
+        <ol> ordered list
+        <ol type="1" > type ile sıralama şeklini seçebilirsin.
+            <li>Editörü kur </li>
+            <li>.html uzantılı dosya oluştur.</li>
+            <li>ilk html kodlarını yaz.</li>
+        </ol> ol etiketi ile ise 1-2-3 gibi sıralı listemele yapabilirsin. -->
+
+        <!-- Audio Etiketi -->
+        <!--
+            <audio controls>
+                <source src="MP3 kaynağı.mp3 " type="audio/mpeg" > type içinde yazan sadece mp3 çalması için diğerleri için internetten bak 
+            </audio>
+
+            <video controls>
+                <source src="Videonun Kaynağı.mp4" type="video/mp4" >
+            </video>
+        -->
+        <!-- Iframe Etiketi-->
+
+        <!--
+        <iframe src="https://www.exagate.com" width="500" height="500"> iframe etiketi ile sitenin oluşturduğumuz sitede açılmasını sağlıyoruz
+        </iframe> -->
+
+        <!--
+        <a href="https://www.exagate.com" target="xxxx"> Memonunu şirketi </a>
+        <a href="https://erbilen.net" target="xxxx"> Erbilen.net </a>
+
+        <br>
+        <br>
+
+
+        <iframe name="xxxx" src="https://www.exagate.com" width="1000" height="1000">
+        </iframe>
+        -->
+        
+        <!-- FORM ETİKETLERİ --> 
+        <!---
+        <form action="" method="GET" >
+           Kullanıcı Adı <input type="text"> <br>
+           Password <input type="password"> <br>
+           Fotoğraf <input type="file" > <br>
+           Kabul Ediyorum <input type="checkbox" > <br>
+           Gönder <input type="Submit" >
+        </form>
+        -->
+        <!-- Form etiketlerini label etiketi içerisinde yazarsan yazıya tıkladığında kutuya yönlendirir seni-->
+        <!--
+            <form action="" method="GET" >
+                <label for="SOSOS" > Kullanıcı Adı </label>
+                <input id="SOSOS" type="text"> 
+                <label>
+                    <input type="checkbox"> Kuralları Kabul Ediyorum -----Yazıya tıkladığında bile gidip kutucuğu işaretlicek
+                </label>
+            -->
+        <!--
+            <label>
+                <input type="radio" name="cinsiyet" value="Erkek"> ERKEK
+            </label>
+            <label>
+                <input type="radio" name="cinsiyet" value="Kadın"< KADIN
+        -->
+        <!-- radio type ile kutucuk yuvarlık olur ama iki kutucuğu aynı anda seçmek istemediğimiz için name etiketi verdik ve arka planda hangisinin seçildiğini bilmemiz için value etiketi verdik -->
+        
+        <!--
+        <form action="" method="GET" >
+           Kullanıcı Adı <input required type="text"> <br> --> <!-- required dediğimiz için kullanıcı adı girmeden formu göndermez
+           Password <input type="password"> <br>
+           Fotoğraf <input type="file" > <br>
+           Kabul Ediyorum <input type="checkbox" > <br>
+           <input type="Submit" >
+        </form>
+        -->
+        
+        <!--
+        <form action="" method="GET"
+        <input list="diller">
+        <datalist id="diller">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+        </datalist>
+        bu şekilde kutucuğun içinde liste şeklinde verir ve istediğimiz seçeriz.
+        -->
+
+        <!--
+        <select name="dil">
+            <option value="CSS"> CSS </option>
+            <option value="HTML"> HTML </option>
+            <option value="JavaScript"< "JS" </option>
+        </select>
+        -->
+        <!--
+        <select name="dil[]" multiple size="3">
+            <optgroup label="Front-end Dilleri">
+                <option values="HTML"> HTML </option>
+                <option values="CSS"> CSS </option>
+                <option values="JS"> JS </option>
+            </optgroup>
+            <optgroup label="Back-end Dilleri">
+                <option values="PHP"> PHP </option>
+                <option values="Python"> Python </option>
+                <option values="JS"> JS </option>
+            </optgroup>
+
+        -->     
+        
+    
+    </body>
+    
+</html>

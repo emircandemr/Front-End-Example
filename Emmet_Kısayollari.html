@@ -1,0 +1,72 @@
+<!--
+    Emmet Kısa Yolları
+    + kardes oge
+    > icinde oge
+    ^ disinda oge olustur 
+    * carp 
+    lorem çok uzun yazı
+    lorem4 4 kelimelik yazı
+    . class
+    # id
+-->
+
+<!--
+    1 - Örneğin şekildeki, gibi ul tagı içerisinde li tagı oluşturmak istiyorsunuz. Bunun için yapmanız gereken tek şey ul>li yazarak Tab’a basmak.
+-->
+<ul>
+    <li></li>
+</ul>
+
+<!--
+    2 - Peki ya bu ul tagı içerisine birden fazla li oluşturmak istiyorsam, ne yapmalıyım?
+    Bunun için * ifadesini kullanırız. ul>li*3 yaparak ul tagı içerisinde üç adet li tagı oluşturabilirsiniz.
+-->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<!--
+    3 - Tag eklerken onlara class özelliği vermek için de . ifadesini kullanırız.
+    Örneğin ul.class1>li.class2 yazılarak tab tuşuna basıldığında
+-->
+<ul class="class1">
+    <li class="class2"></li>
+</ul>
+
+<!--
+    4 - Bir id özelliği eklemek için ise # ifadesini kullanırız. Yeni bir örnekle id özelliği eklemeyi görelim. ul#id1>li#id2 diyerek aşağıda gördüğünüz kodu oluşturabiliriz.
+-->
+<ul id="id1">
+    <li id="id2"></li>
+</ul>
+
+<ol id="id1">
+    <li id="id2">
+        <ul id="id3"></ul>
+    </li>
+</ol>
+
+<!--
+    5 - Burada + ve * ifadesinin farkını da daha kolay anlayabiliriz.
+    Örneğin ul tagının içine aynı id’ye sahip 3 adet li eklemek istiyorsam * ifadesi kullanılabilir.
+    Fakat amacım farklı id’lere sahip üç adet li tagı oluşturmaksa ul>li#id1+li#id2+li#id3 yapılır.
+-->
+
+<!--
+    6 - Peki otomatik artış sağlayan değerleri tek tek yazmak amacımız zaman tasarrufu iken ne kadar mantıklı?
+    Emmet bunun için de bir kısa yola sahip :$ ifadesi. Yani yukarda görmüş olduğunuz ul>li#id1+li#id2+li#id3 şeklinde yazdığımız kod bloğunu çok daha basit bir biçimde ul>li#idNo$*3 diyerek yazabiliriz.
+    Böylece otomatik olarak idNo1, idNo2 ve idNo3 idlerine sahip üç adet li tagımız olur.
+-->
+
+<!--
+    Sırada oluşturulan tagların içine text yazılması var:
+    Textlerimizi {} ifadesinin içine yazmamız yeterli: p{Emmet ile tag içine text yazma}
+-->
+
+<!--
+    p>lorem çok uzun yazı
+    p>lorem4 4 kelimelik
+-->
+<p>Lorem ipsum dolor sit.</p>

@@ -1,0 +1,3 @@
+git init
+git status (hangisi takip ediliyor onu görebilirsin)
+git add index.html (takibe başlıcak olan dosyanın adı)

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> Kayıt Formu </title>
+    </head>
+
+    <body>
+        <form action="" method="GET" enctype="multipart/form-data">
+            <fieldset>
+                <legend> Sözleşme Onay </legend>
+                <input type="checkbox" id="Onay" name="Onay" required>
+                <label for="Onay" > <a href="https://www.exagate.com/" target=_blank >Sözleşme Bilgilerini Okudum ve Kabul Ediyorum </a> </label> <br><br>
+                <input type="submit" id="Submit" name="submit" value="Formu Kaydet">
+                <input type="reset" id="Reset" name="Reset" value="Formu Temizle" > <br><br>
+
+                <a href="mailto:mehmet.demir@exagate.com"> Mail At </a>
+                
+            </fieldset> <br>
+
+            <fieldset>
+                <legend> Kullanıcı Bilgileri </legend> 
+                Fotoğraf : <input type="file" id="file" name="file"> <br><br>
+                <table>
+                    <tr>
+                        <td>Kullanıcı Adı : </td>
+                        <td>
+                        <input type="text" id="Ad" name="Ad" placeholder="Kullanıcı Adı Giriniz" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Şifre : </td>
+                        <td>
+                            <input type="password" id="Sifre" name="sifre" placeholder="Şifre Giriniz">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Doğum Tarihiniz :</td>
+                        <td>
+                            <input type="date" id="DogumT" name="DogumT">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail : </td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="Email Adresinizi Giriniz">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset> <br>
+            <fieldset>
+                <legend> Diğer Bilgiler </legend>
+                <table>
+                    <tr>
+                        <td> Yabancı Dil :</td>
+                        <td>
+                            <input list="diller">
+                            <datalist id="diller">
+                                <option value="İngilizce">
+                                <option value="Almanca"></option>
+                                <option value="Fransızca"></option>
+                                <option value="İspanyolca"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Yabancı Dil Seviyesi:
+                        </td>
+                        <td>
+                            <input type="range" step="1" max=10 style="color:red">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Sektör Deneyimi :
+                        </td>
+                        <td>
+                            <select name="Deneyim">
+                                <option value="1-3">1-3 yıl</option>
+                                <option value="3-5">3-5 yıl</option>
+                                <option value="5-8">5-8 yıl</option>
+                                <option value="8-">8 yıl ve üzeri</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Yazılım Dilleri :
+                        </td>
+                        <td>
+                            <select name="Yazılım[]" >
+                                <optgroup label="Front-end Dilleri">
+                                    <option values="HTML"> HTML </option>
+                                    <option values="CSS"> CSS </option>
+                                    <option values="JS"> JS </option>
+                                </optgroup>
+                                <optgroup label="Back-end Dilleri">
+                                    <option values="PHP"> PHP </option>
+                                    <option values="Python"> Python </option>
+                                    <option values="JS"> JS </option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Hakkında</legend>
+                <textarea id="hakkında" name="hakkında" cols="70" rows="10"> </textarea>
+            </fieldset>
+        </form>
+    </body>
+</html>
