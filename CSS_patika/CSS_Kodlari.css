@@ -1,0 +1,24 @@
+#DivTEST {
+    background-color: blueviolet;
+}
+/* ctrl ö yaparsan direk yorum satırına alır. */
+div {
+    background-color: brown;  
+    text-transform: uppercase; /* uppercase tüm yazıyı büyük yapar */ /* lowercase küçük harf yapar */
+    font-family: 'Times New Roman', Times, serif; /* Yazı Tipi Seçilebilir */
+}
+
+/* class --> .text-red gibi . ile class ismi verebilirsin */
+.baslik {
+    color:rgb(107, 47, 47);
+    font-size:x-large;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.altbaslik {
+    color:darkgoldenrod;
+    font-size:larger;
+    text-align: center;
+}
