@@ -3,9 +3,13 @@
 }
 /* ctrl ö yaparsan direk yorum satırına alır. */
 div {
-    background-color: brown;  
+    background-color: rgb(180, 180, 180);  
     text-transform: uppercase; /* uppercase tüm yazıyı büyük yapar */ /* lowercase küçük harf yapar */
     font-family: 'Times New Roman', Times, serif; /* Yazı Tipi Seçilebilir */
+    font-style: italic;
+    line-height: 40px; /* satır aralığı */
+    /* font: bold italic 20px/30px Arial */ /* gibi tüm özellikleri tek şekilde verebilirsin */
+
 }
 
 /* class --> .text-red gibi . ile class ismi verebilirsin */
@@ -14,6 +18,7 @@ div {
     font-size:x-large;
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 10px 10px 0 red;
     
 }
 
@@ -21,4 +26,94 @@ div {
     color:darkgoldenrod;
     font-size:larger;
     text-align: center;
+}
+
+/* important kullanımı bütün class id lerin üstünde demek */
+
+/* ul.test {
+    color: sienna !important ; }
+    */
+
+/* mesela div' in içindeki h2'ye style eklemek için div > h2 yapabilirsin */
+
+div > h1 {
+    color:red ;
+}
+
+/* oluşturduğun kutunun içerisindeki yazıyı değiştirme */
+input::placeholder {
+    color:red
+}
+
+/* ul içerisindeki li nin ilk maddesine style ekleme */
+ul li:first-child {
+    color:aqua;
+    font-size: 20px;
+}
+
+/* ul içerisindeki li nin son maddesine style ekleme */
+ul li:last-child {
+    color:blue;
+    font-size: 30px;
+}
+
+/* ul içerisindeki istediğini li'ye style ekleme */
+ul li:nth-child(3) {
+    color:silver
+}
+
+input[type="checkbox"]:checked + div {
+    display: none;
+}
+
+/* spanı'da display sayesinde block element haline getirdik. */
+span {
+    background-color: cadetblue;
+    padding: 10px; /* padding --> iç boşluk sadece block seviyesindeki elemanlara verilir.  */
+    display: block;
+    /* display: inline-block; sadece yazı kadar block seviyesi getirir !!!!önemli */
+}
+.box {
+    background-color:springgreen;
+    width: 200px;
+    height: 200px;
+    padding: 10px 10px 10px 10px; /*iç boşluk --> saat yönünde döner yukarı-sağ-aşağı-sol*/
+    margin: 10px ; /*dış boşluk */
+    border: 5px dotted grey ;
+    border-right-color: blueviolet;
+    border-bottom-style: dashed;
+    box-sizing: border-box; /* ile padding ve margin width ve height değerlerine etkilemez */
+    border-radius: 30px; /* padding gibi 10px 10px diyye saat yönünde gider*/
+    /* border-radius: 50%; yuvarlak yapma */
+
+}
+
+.arkaplan {
+    width: 300px;
+    height: 300px;
+    background-image:url(data:image/jpeg;base64,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);
+    background-size: contain; /* cover dersin tam oturtur. contain dersen boyutunu değiştirmeden tekrarlar*/
+    background-repeat:no-repeat; /* tekrarlamayı kapatır */
+    background-position: center; /* görsel ortalanır */
+
+}
+
+.kutu {
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    margin-top: 50px;
+    position:relative;
+
+}
+.kutu span{
+    position: absolute; /* absolute ile aslında spannnn yazısının sınırlarını kaldırdım yani artık sayfada istediğim npktaya götürebilirim. */
+    /*top:0;
+    left: 0; top ve left ile sayfanın en üst sol köşesine gönderdim. */
+    /* eğer spannn kutusunu oluşturduğuum div etiketinin dışına çıkmasını istemiyosam kutu etiketine position:relative diceksin */
+    top:10px;
+    right: 10px;
+    /* position: fixed; scroll ile beraber hareket eder fixlerde sayfaya yani  */
+    /* z-index: 2; kutuyu resmin arkasına veya önüne getirmek için*/
+    
 }
