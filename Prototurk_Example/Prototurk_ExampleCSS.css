@@ -1,0 +1,134 @@
+
+
+* { /* tüm elemanlara default olarak gelen iç ve dış boşlukları kaldırdık. */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* listelerde gözüken nokta işaretini kaldırdık */
+    border: none;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none; /* bütün etiketlerdeki altı çizili olan varsa ne bilim dekarosyon olan her yazıyı kaldırdı. */
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex; /* flex yapısıyla beraber elemanları yan yana getirdik. */
+    justify-content: space-between; /* header etiketi içerisindeki her şeyi yan yana getirdi ve aralarını eşitledi */
+    height: 60px; /*block şeklinde olduğu için yüksekliği belirledik. */
+    border-bottom: 1px solid black;
+    align-items: center; /* header içerisindeki her etiketi kendi içerisinde ortaladı. */
+    padding: 0 15px; /*yukarıdan 0 sağdan soldan 15 boşluk verdik */
+    box-sizing: border-box; /* border-box ile aslında height=60px sabitledik border-bottom felan etki etmiyor her türlü 60px */
+}
+.header .Logo {
+    font-size: 25px;
+    font-weight: bold;
+    color:black;
+    letter-spacing: 3px;
+    border-right: 2px solid;
+    padding: 0 10px;
+}
+.header .Menu ul{
+    display: flex; /*header > menu > ul içerisindeki elemanları yan yana getirdik */
+}
+
+.header .Menu ul li {
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.header .Menu ul li a {
+    font-size: 18 px;
+    color:black;
+}
+
+.header .Login a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(5, 5, 39);
+    padding:0px 20px;
+    border-radius: 10px;
+    color:white;
+
+}   
+
+.container {
+    display: flex;
+}
+
+html, body ,section{
+    height: 100%;
+}
+.container .sidebar {
+    border-right: 1px solid black; /*eğer tepeye gidip html,body height:100% yazmassan çizginin aşağıya kadar gitmez */
+    width: 300px;
+    overflow: auto; /* sidebar kısmında çok fazla yazı olduğu için aşağıya taraflara inmek için scroll çıkartıyor */
+    min-width: 250px; /************* Eğer bunu demezsen content kısmında çok fazla yazı olursa sidebar gözükmezzzz */
+}
+.container .sidebar  h6:first-child {
+    margin-top: 20px;
+}
+.container .sidebar h6 {
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 2px;
+    font-weight:bold;
+    margin-bottom: 15px; /*her başlığın alt kısmından 15px boşluk ekledik */
+    margin-top: 10px;
+    padding: 0 15px;
+
+}
+.container .sidebar ul {
+    margin-bottom: 30px;
+}
+.container .sidebar ul li a {
+    display: block;
+    padding: 3px 15px;
+    color:#999; 
+}
+.container .sidebar ul li a:hover {
+    background-color: #333;
+    color:white;
+}
+
+.container .sidebar ul :last-child {
+    margin-bottom: 0px;
+}
+.container .content{
+    padding: 25px;
+    overflow: auto;
+
+}
+
+.container .content h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.container .content h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    border-left:6px solid black;
+    padding: 0 0 0 10px;
+    position: sticky; /* sayfa aşağıya kaydıkça başlıklar üstte kalacak */
+    top: 0;
+    background-color: white;
+}
+
+.container .content p{
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.container .content ul {
+    margin-bottom: 15px ;
+}
+.container .content ul li{
+    list-style: circle;
+    margin-left: 30px;
+    line-height: 1.6;
+    list-style-position: inside;
+}
+
