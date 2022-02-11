@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+    list-style: none;
+    border:none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Syne Tactile', cursive;
+}
+
+
+.background{
+    width: 100%;
+    height: 100vh; /*resimi tüm sayfaya kaplatman için */
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.background .header {
+    width: 85%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:35 0px;
+}
+.logo{
+    color: rgb(185, 209, 200);
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    border-right: 2px solid rgb(185, 209, 200);
+    cursor: pointer;
+}
+
+.header ul{
+    display: flex;
+}
+.header ul li{
+    padding: 30px 30px;
+    position: relative;
+    display: inline-block;
+    
+}
+.header ul li a {
+    color: rgb(185, 209, 200);
+    font-size:17px;
+    display: block;
+}
+.header ul li a:hover{
+    background-color: #333;
+    color:white;
+    transition: 0.2s;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(185, 209, 200);
+}
+.content h1{
+    font-size: 65px;
+    margin-top: 80px;
+}
+.content p{
+    margin:20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(185, 209, 200);
+    background: transparent; 
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background:rgb(185, 209, 200);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    z-index: -1;
+    transition: 1s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border:none;
+}
