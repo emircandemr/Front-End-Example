@@ -1,0 +1,57 @@
+.container{
+    width: auto;
+    height:100vh;
+    display: flex;
+    background-color: #1f222C;
+    flex-wrap:wrap;
+    padding: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #474C5A;
+    width:auto;
+    height:120px;
+    padding:0 10 0 10px;
+    align-items:center;
+    position: relative;
+    margin:10px;
+    border-radius: 10px;
+}
+.text{
+    color:white;
+    padding: 0 5px 0 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 10px;
+
+}
+.btn{
+    background-color: aliceblue;
+    width:40px;
+    height:30px;
+}
+
+.update{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: inline-block;
+    height: 10px;
+    width: 20px;
+
+}
+.svg{
+    position:absolute;
+    bottom:5px;
+    right:30px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}

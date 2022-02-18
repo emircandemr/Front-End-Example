@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+/* #474C5A; */
+/* rgb(21, 161, 161) */
+/* mavi #2ccdea */
+ 
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #1f222C;
+}
+
+/* --------------Navbar Start----------------------------------------- */
+.navbar{
+    margin-top: 50px;
+    height:50px;
+    width: 100%;
+    position:sticky;    
+    top:0;
+    z-index: 1;
+    padding:17px ;
+    display: flex;
+}
+    .navbar .brand-name{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color:white;
+        letter-spacing: 2px;
+        font-size: 25px;
+        font-family: 'Redressed', cursive;
+        margin-top: -10px;
+        margin-left: 150px;
+    }
+    .navbar .brand-name span{
+        margin-top: 15px;
+        width: 6px;
+        height: 6px;
+        background-color: #556B2F;
+        border-radius: 50%;
+    }
+    .navbar .brand-name:hover{
+        color:#556B2F;
+    }
+
+    .navbar .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .navbar .menu a{
+        padding-right: 20px;
+        text-decoration: none;
+        color:white;
+    }
+
+    .navbar .menu a:hover{
+        color:#556B2F;
+        font-size: 18px;
+    }
+
+    .navbar .social-logo{
+        margin-right: 150px;
+        position:relative;
+    }
+
+    .navbar .social-logo a{
+        text-decoration: none;
+    }
+    .navbar .social-logo a i{
+        padding-right: 10px;
+        color:white;
+        position: relative;
+    }
+    .navbar .social-logo a i:hover{
+        color: #556B2F;
+        font-size: 20px;
+    }
+
+/* --------------Navbar END----------------------------------------- */
+
+.container{
+    height:100vh;
+    width: 85%;
+    margin: auto;
+    border:2px solid white;
+
+}

@@ -117,3 +117,23 @@ span {
     /* z-index: 2; kutuyu resmin arkasına veya önüne getirmek için*/
     
 }
+
+/* FLEXBOXXX ÖZELLİKLERİ */
+
+/* mesela .container diye bir class olsun */
+.container{
+    /*-------------------------kutunun tamamına verilen özellikler-----------------------------------------*/
+    display:flex;
+    flex-wrap: wrap; /*dersen eğer kutular tek bir satır yerine birde çok satıra sıralanabilir -- default olarak no-wrap olarak çalışır bu yüzden verdiğin width değerlerini kabul etmez*/
+    /*o yüzden flex-wap ile birden fazla satıra yayılsın yapabilirsin */
+    flex-direction: colum; /*flex-direction default olarak row şeklinde gelir yani satır olarak sıralar sana bunu değiştirmek için flex-direction kullanırsın */
+    justify-content: flex-end; /*sağa yaslar*/
+    align-items: flex-end; /* align-items ise kutuları dikey olarak sıralar flex-end dersen sayfanın altına hizalar*/ /*TEK SATIRLAR İÇİN *** BİRDEN FAZLA SATIR VARSA align-content*/
+    align-content: center; /* align-items den farkı birden fazla satırda kutun varsa onları sıralamak için kullanılır.*/
+    /*-------------------------kutunun içindekilerine verilen özellikler-----------------------------------------*/
+    align-self: center; /* flexsin içerisindeki kutuları istediğimiz konuma getiriyoruz. */
+    flex-grow: 1; /* kutular boşluklara yayılır ----- mesela 3 kutu var ortadaki kutuya gidip flex-grow:1 dersen ortaki kutuyu sağa sola yayar sağdaki ve soldaki kutuyu köşelere atar.*/
+    flex-shrink: 0; /* dersen sayfa küçüldüğünde kutu küçülmesin */
+
+
+}

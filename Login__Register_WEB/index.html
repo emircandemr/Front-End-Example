@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-button" onclick="login()">Sign In</button>
+                <button type="button" class="toggle-button" onclick="register()">Register</button>
+            </div>
+            <div class="logo">
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_crrhyjnr.json" mode="bounce" background="transparent"  speed="1" loop  autoplay>
+                </lottie-player>
+            </div>
+            <div class="social-logo">
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_OFBfKg.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_0Cm1Y2.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_Joz0FE.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_3s913D.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+            </div>
+            <form id="Login" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Username" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <a href="#">Lost Your Password ?</a>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="Register" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Username" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="email" class="input-field" placeholder="Enter E-mail" required>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        var javalogin=document.getElementById("Login");
+        var javaregister=document.getElementById("Register");
+        var javabutton=document.getElementById("btn");
+
+        function register(){
+            javalogin.style.left="-400px";
+            javaregister.style.left="50px";
+            javabutton.style.left="135px";
+        }
+
+        function login(){
+            javalogin.style.left="50px";
+            javaregister.style.left="400px";
+            javabutton.style.left="0px";
+            
+        }
+    </script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- <script src="https://assets3.lottiefiles.com/packages/lf20_crrhyjnr.json"></script> -->
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+    
+</body>
+</html>

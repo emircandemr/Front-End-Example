@@ -1,0 +1,101 @@
+
+.relaySensorContainer{	
+	/* margin:10px; */
+	width:auto;
+	box-sizing: border-box;
+	/* border: 3px solid rgb(161, 157, 157); */
+	/* padding: 10px 10px; */
+	/* border-radius: 10px;
+	box-shadow: 0 0 20px 20px #68656411; */
+}
+
+.normal-alarm-na{
+	vertical-align: middle;
+	width: auto;
+}
+
+.deviceName{
+	text-align:left;
+	width:auto;
+   	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+.deviceName img{
+	width:24px;	
+}
+
+ul.relaySensors{
+	padding: 4px; 
+    text-align: center;
+	}
+
+ul.relaySensors li {
+	display: inline-block;
+	width:auto;
+	min-height:40px;
+	min-width:10%;
+	/* border: none; */
+	/* display: -moz-inline-stack; */
+	vertical-align: top;
+	margin: 3px 5px;
+	
+}
+
+.sensortile{
+	position:relative;
+	width:auto;
+	height:100px;
+	min-width:100px;
+	padding:0 5px;
+	border:2px solid rgb(161, 157, 157);
+	border-radius: 10px;
+}
+
+.sensortile h2{
+	font-size:14px;
+	padding: 0 0 2px 0 ;
+	/* padding:10px 0 3px 0; */
+	border-bottom: 2px dotted rgb(161, 157, 157);
+}
+
+
+.btn{
+	position:absolute;
+	top:50%;
+	left:50%;	
+	transform: translate(-50%,-50%);	
+}
+
+.sensortile .updateTime{
+	position:absolute;
+	bottom:0;
+	right:0;
+	margin:3px;
+}
+
+.updateTime{
+	font-size:8px;
+	vertical-align: middle;
+	width: auto;
+}
+
+.updateTime img{	
+	width:10px;
+	margin:2px 2px 0 0;
+}
+
+
+
+/* .normal-alarm-na{
+	position: relative;
+	display: inline;
+	line-height: inherit;
+	font-size: 1em;
+	width: auto;
+	fill: currentColor;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+ */
+
