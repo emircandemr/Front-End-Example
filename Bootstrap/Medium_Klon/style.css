@@ -1,0 +1,28 @@
+*{
+    font-family: 'Fredoka', sans-serif;
+}
+
+.font-logo{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.navbar-font{
+    font-size: 14px;
+}
+
+.backg{
+    background-color: #FFC017
+}
+
+.border-bt{
+    border-bottom: 1px solid rgba(41, 41, 41, 1);
+}
+
+.h1-text{
+    font-size: 70px;
+}
+
+.p-margin{
+    margin-top: -5px;
+}

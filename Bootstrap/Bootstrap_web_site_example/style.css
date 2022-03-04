@@ -1,0 +1,250 @@
+.bg-color{
+    background-color: #1A374D;
+}
+.container-fluid{
+    color: #fff;
+}
+
+.ed-border{
+    border:1px solid #1A374D
+}
+
+.side-post{
+    font-size: 14px;
+}
+
+
+.d-flex .btn{
+    color:#fff;
+    border:2px solid #fff;
+
+}
+
+.d-flex .btn:hover{
+    background-color: #fff;
+    color:#21325E;
+    border:2px solid #21325E;
+}
+
+.container .card img{
+    width: 250px;
+    margin: auto;
+
+}
+
+.mini-post{
+    width: 10px;
+    height: 200;
+}
+
+/* .carousel-inner img{
+    height: 400px;
+} */
+
+/* E62C03 */
+
+/* CSS */
+.button-42 {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 50%;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+.button-42:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+
+.contact_me_box{
+    height: 100vh;
+    width: 50%;
+    /* border: 2px solid #F0A500; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_content{
+    height:50%;
+    width: 80%;
+    /* border: 2px solid #F0A500; */
+    margin: auto;
+}
+.contact_content .text{
+    font-size: 30px;
+    color: #F0A500;
+    font-family:'Dancing Script', cursive;
+    text-align: center;
+    border-bottom: 2px solid #F0A500;
+    padding-bottom: 15px;
+}
+.contact_info{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.contact_card{
+    background-color: #333644;
+    height: 150px;
+    width: 220px;
+    margin: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    border-radius: 15px;
+    padding-top: 15px;
+}
+
+.contact_card i{
+    font-size: 25px;
+    background-color: #F0A500;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+.contact_card a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.contact_card:hover{
+    border:2px solid #F0A500;
+    background: none;
+}
+
+.contact_card:hover i{
+    background:none;
+    color: #F0A500;
+    transform: scale(1.5);
+}
+
+.contact_card p{
+    opacity: 0;
+    transition: 0.3s linear;
+    max-height: 0;
+}
+
+.contact_card:hover p{
+    opacity: 1;
+    max-height: 20px;
+}
+
+.footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#1A374D;
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+  
