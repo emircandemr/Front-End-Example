@@ -1,0 +1,64 @@
+/* font-family: 'Hurricane', cursive; */
+
+body{
+    font-family: 'Hurricane', cursive;
+    background-color: #1f222C;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+#clockBox{
+    height: 50%;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top:10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    font-size: 60px;
+    text-align: center;
+}
+
+.containerBox{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-items{
+    width: 25%;
+    height: 17vh;
+    background-color:#e7eaf6;
+    border-radius: 20px;
+    color: #1f222C;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.containerBox div:last-child{
+    margin-right: 0;
+}
+
+.clock-items p {
+    font-size: 80px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+}
+
+#date{
+    text-align: center;
+    font-size: 32px;
+    /* font-family: 'Orbitron', sans-serif; */
+}

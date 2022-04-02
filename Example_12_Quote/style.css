@@ -1,0 +1,36 @@
+.backg{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quoteBox{
+    height: auto;
+    width: 50% !important;
+    background-color: azure;
+    position: relative;
+    top:35vh !important;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.71);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 2px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 30px;
+    padding: 30px;
+
+}
+.button-group{
+    text-align: right;
+
+}
+
+.content{
+    margin-left: 15px;
+    font-family: 'Patrick Hand', cursive !important;
+    font-size: 22px;
+}
