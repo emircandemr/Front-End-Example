@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #1c8933 !important;
+
+}
+.backg{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(background.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:rgba(255, 255, 255, 0.6) !important; 
+    position: relative;
+
+}
+
+.img{
+    position: absolute;
+    bottom:10%;
+    right: 7%;
+    width: 50px;
+    
+}
+.img img{
+    width: 120px;
+    height: auto;
+}
+
+.toDoText{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(8.6px) !important;
+    -webkit-backdrop-filter: blur(8.6px);
+    border: 1px solid rgba(34,142,57,255) !important;
+    background: rgba(255, 255, 255, 0.22) !important;
+    z-index: 1!important;
+    height: 40px;
+    border-radius: 20px !important;
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    color: #1c8933 !important;
+    font-size: 17px !important;
+
+}
+
+.plus{
+    width: 50px;
+    height: 100%;
+    border: 1px solid rgba(34,142,57,255) !important;
+    background: transparent;
+    background-color: rgba(34,142,57,255);
+    border-radius: 20px;
+    color: #fff;
+}
+
+.toDoBox{
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(8.6px) !important;
+    -webkit-backdrop-filter: blur(8.6px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.59) !important;
+    background: rgba(255, 255, 255, 0.22) !important;
+    font-family: 'Amatic SC', cursive !important;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.toDoHead{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(8.6px) !important;
+    -webkit-backdrop-filter: blur(8.6px) !important;
+    background: rgba(34,142,57,255) !important;
+    font-family: 'Amatic SC', cursive !important;
+    border-radius: 20px 20px 0 0 ;
+}
+.toDoHead h3 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+}
+.toDoBody{
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    padding: 10px;
+}
+
+.completedBox{
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(8.6px) !important;
+    -webkit-backdrop-filter: blur(8.6px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.59) !important;
+    background: rgba(255, 255, 255, 0.22) !important;
+    font-family: 'Amatic SC', cursive !important;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.completedHead{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(8.6px) !important;
+    -webkit-backdrop-filter: blur(8.6px) !important;
+    background: rgba(34,142,57,255) !important;
+    font-family: 'Amatic SC', cursive !important;
+    border-radius: 20px 20px 0 0 ;
+}
+.completedHead h3 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+
+}
+.completedBody{
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    padding: 10px;
+}
+
+.toDoBody span {
+    font-family: 'Montserrat Alternates', sans-serif !important;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+    <div class="main" id="mainBg">
+
+        <div class="container" id="container">
+            <div class="content">
+                <div class="text">
+                    <p>Hesap Makinesi</p>
+                </div>
+                <div class="input">
+                    <p id="screen">0</p>
+                </div>
+                <div class="numbers">
+                    <table>
+                        <tr >
+                            <td class="btn" id="btnNumber">7</td>
+                            <td class="btn" id="btnNumber">8</td>
+                            <td class="btn" id="btnNumber">9</td>
+                            <td class="btn btn2" id="del">DEL</td>
+                            <td class="btn btn2" id="reset">AC</td>
+                        </tr>
+                        <tr>
+                            <td class="btn" id="btnNumber">4</td>
+                            <td class="btn" id="btnNumber">5</td>
+                            <td class="btn" id="btnNumber">6</td>
+                            <td class="btn" id="btnOpt">x</td>
+                            <td class="btn" id="btnOpt">÷</td>
+                        </tr>
+                        <tr>
+                            <td class="btn" id="btnNumber">1</td>
+                            <td class="btn" id="btnNumber">2</td>
+                            <td class="btn" id="btnNumber">3</td>
+                            <td class="btn" id="btnOpt">+</td>
+                            <td class="btn" id="btnOpt">-</td>
+                        </tr>
+                        <tr>
+                            <td class="btn" id="btnNumber">0</td>
+                            <td class="btn" id="btnNumber">.</td>
+                            <td class="btn" id="btnOpt">x10</td>
+                            <td class="btn" id="btnOpt">Ans</td>
+                            <td class="btn" id="btnEquals">=</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="theme" id="theme">
+            <div class="theme_box">
+                <span class="mode_moon">
+                    <i class="fa-solid fa-moon" id="moon"></i>
+                </span>
+                <span class="mode_sun">
+                    <i class="fa-solid fa-sun"></i>
+                </span>
+                <span class="mode_ball" id="ball">
+                    
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+                                        
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

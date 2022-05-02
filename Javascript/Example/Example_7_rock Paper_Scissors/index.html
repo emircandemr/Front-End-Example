@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock - Paper - Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="main">
+
+        <div class="container">
+            <div class="playerText">
+                <div class="player1Text">
+                    <h3>Player-1</h3>
+                </div>
+                <div class="scoreText">
+                    <h3>Score</h3>
+                </div>
+                <div class="player2Text">
+                    <h3>Player-2</h3>
+                </div>
+
+            </div>
+
+            <div class="playerBox">
+                <div id="player1" class="player1Box">
+                </div>
+                <div class="score">
+                    <div id="player1score" class="player1score">
+                        0
+                    </div>
+                    <div id="player2score"  class="player2score">
+                        0
+                    </div>
+                </div>
+                <div id="player2" class="player2Box">
+                </div>
+            </div>
+
+
+            <div class="playBtn">
+                <button onclick="SRP()">
+                    <span>Play</span>
+                    <div class="liquid"></div>
+                  </button>
+
+                  <button>
+                    <span>Restart</span>
+                    <div class="liquid"></div>
+                  </button>
+            </div>
+            <div id="resultbox" class="resultBox">
+            </div>
+        </div> 
+
+
+    </div>
+    
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

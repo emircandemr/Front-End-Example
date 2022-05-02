@@ -1,0 +1,114 @@
+/* background-color: #1f222C; */
+
+.backg{
+    font-family: 'Permanent Marker', cursive;
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#bmiBox{
+    height: 50vh;
+    width: 50%;
+    position: relative;
+    top: 25vh;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.6px);
+    -webkit-backdrop-filter: blur(8.6px);
+    border: 1px solid rgba(255, 255, 255, 0.59);
+    background: rgba(255, 255, 255, 0.22);
+}
+
+h3{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+#weightBox {
+    height: 20%;
+    width: 20%;
+}
+
+#weightText{
+    height: 40px;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#weightValue{
+    width: 50%;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+}
+#heightValue{
+    width: 50%;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.buton1{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.buton2{
+    width: 50%;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.buton1:hover{
+    background-color: #c8ac54;
+}
+
+.buton2:hover{
+    background-color: #9f2c2c;
+}
+
+
+#result{
+    width: 35%;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: none;
+}
+#result2{
+    width: 35%;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: none;
+}
+

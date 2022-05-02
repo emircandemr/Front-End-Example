@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Javadeneme{
+            width: auto;
+            height: 30px;
+            border-radius: 20px; background-color: sandybrown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="width: 100%; height: 150px; background-color: gray; color:#fff; text-align: center; 
+    display: flex; justify-content: center; text-align: center; margin: auto; top:50%; transform: translateY(40vh);">
+        <div>
+            <h1>Javascript</h1>
+            <p id="paragrafrenk">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro error sapiente earum iure illo aspernatur?</p>
+            <div >
+                <!-- <button class="Javadeneme" onclick="fonksiyonismi()"> Üye Ol</button> -->
+                <!-- <button class="Javadeneme" onclick="this.innerHTML = 'Butona Tıklandı'"> Üye Ol</button>  Butona Tıkladığında içindeki yazıyı değiştirir.  -->
+                <!-- <button class="Javadeneme" onclick="Renkdegistir()"> Tıkla</button> -->
+                <button class="Javadeneme" onmouseover="mouseover()" onmouseout="mouseout()"> Mouse over Efecti</button>
+            </div>  
+        </div>
+
+    </div>
+
+    <!------------------------------------------JavaScript Kodları-------------------------------------------------------------------->
+    <script>
+
+
+        
+
+
+
+
+
+        //----------------------------------------------------------------
+
+        // function mouseover() {
+        //     var Alpaguhan = document.getElementById("paragrafrenk");
+        //     Alpaguhan.innerHTML = "Mouse over üzerine geldi ve içerik değişti" ;
+        //     Alpaguhan.style.color = "white";
+        //     Alpaguhan.style.backgroundColor = "black"
+        // }
+
+        // function mouseout() {
+        //     var Alpaguhan = document.getElementById("paragrafrenk");
+        //     Alpaguhan.innerHTML = "Mouse over üzerinden çıktı ve içerik değişti" ;
+        //     Alpaguhan.style.color = "black";
+        //     Alpaguhan.style.backgroundColor = "white"
+        // }
+
+
+        //---------------------------------------------------------------
+
+        // butona tıkladığında yukardaki id elementli yazının rengi değişçek 
+
+        // function Renkdegistir() {
+        //     var Mahmut = document.getElementById("paragrafrenk");
+        //     Mahmut.style.color = "yellow"    
+        // }
+
+        //--------------------------------------------------------------
+
+        // function tikla(serhat) {
+        //     serhat.innerHTML = "Butona Tıklandıs..."
+        // }
+
+        //---------------------------------------------------------------
+
+        // function fonksiyonismi(){
+        //     alert("Butona tıklandı")
+        // }
+        
+
+        //----------------------------------------------------------------
+
+        // var fonksiyonu ile tanımlama yaparsın yani sayi1 diye bir fonksiyon tanımladık.
+        // var sayi1 = 20;   
+        // var sayi2 = 30;
+        // var sayi3 = 40;
+
+        // alert( "Toplamları :" + (sayi1+sayi2+sayi3))
+
+        //----------------------------------------------------------------
+
+        // var a;
+        // a=10;
+
+        // var b = a*2 + 10;
+
+        // alert("b sayısı:" + b)
+
+        //------------------------------------------------------------------
+
+        // var array = ["Java", "Python" , "C++", "C"]
+        // alert(array[3]); // 3.index yani C gözüktü
+        
+        // array[4] = "PHP"; // 4.indexe PHP ekledik
+
+        // array.push("Go") ; // 4.indexe son indexe GO ekledik push ile eleman ekleme yapabiliriz.
+        // alert(array)
+        // alert(array.length); // length ile array içindeki eleman sayısını bulabiliriz.
+
+
+        // ----------------FOR DÖNGÜSÜ-----------------------------------
+
+        // for ( var i=0 ; i<10 ; i++) {  // i değerini 0 1 2 3 4 5 6 7 8 9 diye aslında döndürmüş olduk
+        //     console.log("i degeri : " + i );
+        // }
+
+        //----------------------------------------------------------------------
+
+        // var i = 0;
+
+        // while (i<100) {
+        //     console.log("i değeri :" + i );
+        //     i += 2 ; // 2 şer 2şer artmasını sağladık
+
+        // }
+
+        //----------------------------------------------------------------------
+
+        // var sayilar = [32,5,1,100,-1,90];
+
+        // for ( var i=0; i<sayilar.length; i++ ) {   // her bir elemanı for döngüsü ile yazdırdık
+        //     console.log("Elemanlar:" + sayilar[i])
+        // }
+
+        //----------------------------------------------------------------------
+
+        //Yukarda yazdırma işleminin kısayolu 
+        
+        // var sayilar = [32,5,1,100,-1,90];
+
+        // sayilar.forEach(function(sayi) {     // forEach fonksiyonu sayilar listesinin her elemanı sayi ismine eşitledi
+
+        //     console.log("Elemanlar : " + sayi)
+            
+        // });
+
+        //----------------------------------------------------------------------
+
+        // if (2 == "2") {  //normalde str ile float ifadeler eşit olamaz ama == eşit işareti koyarsan "" içerisindeki ifadeyede bakar bunu engellemek için === eşit koy
+        //     console.log("Eşittir...")
+        // }
+
+        //----------------------------------------------------------------------
+        
+        // if (2==2 && "Murat" == "Murat"){ // && simgesi and anlamı var tanımlanan 2 değerde birbirine eşitse çalışacak
+        //     console.log("Evet")
+        // }
+
+        // if (2==2 || "Murat" == "Mehmet"){ // || simgesi or anlamı taşıyor tanımlanan 2 değerden 1 tanesi doğru olması yeter
+        //     console.log("Evet")
+        // }
+        
+        //------------------------------------------------------------------------
+
+        // var a = 10;
+        // var b = 20; 
+
+        // if (a ==b) {
+        //     console.log("Eşittir...")
+        // }
+        // else {
+        //     console.log("Eşit Değildir...")
+        // }
+
+        //--------------------------------------------------------------------------
+
+        // var islem = 2 ;
+
+        // if ( islem == 1 ) {
+        //     console.log("İşlem 1");
+        // }
+
+        // else if ( islem == 2) {
+        //     console.log("İşlem 2");
+        // }
+
+        // else if (islem == 3) {
+        //     console.log("İşlem 3");
+        // }
+
+        // else {
+        //     console.log("Geçersiz İşlem");
+        // }
+        
+        //----------------------------------------------------------------------------
+        // var islem = 2 ;
+
+        // switch(islem) {  // yukarıda tanımladığın if else yapısıyla aynı mantık
+        //     case 1:
+        //         console.log("İşlem 1");
+        //         break;
+        //     case 2:
+        //         console.log("İşlem 2");
+        //         break;
+        //     case 3:
+        //         console.log("İşlem 3");
+        //         break;
+        //     default:
+        //         console.log("Geçersiz İşlem..")
+        // }
+
+        //-----------------------------------------------------------------------------
+
+        // function selamla(){       // function tanımlama pythonda def le aynı mantık
+        //     console.log("Merhaba Nasılsın ? ");
+        // }
+
+        // selamla()
+
+        //-----------------------------------------------------------------------------
+
+        // function selamla(isim){
+        //     console.log("Merhaba " + isim);
+        // }
+
+        // selamla("Ayşe")
+
+        //-----------------------------------------------------------------------------
+
+        // function topla(a,b,c){
+        //     console.log("Toplamları : " + (a+b+c));
+        // }
+
+        // topla(3,4,5)
+
+        //-----------------------------------------------------------------------------
+
+        // function toplama(a,b,c){
+        // return a+b+c ;
+        // }
+
+        // var toplamsonucu = toplama(3,4,5)
+        // console.log("Fonksiyon sonucu : " + toplamsonucu)
+
+        //------------------------------------------------------------------------------
+            //--------OBJE OLUŞTURMA---------------
+
+        // var calisan = {
+        //     isim : "Emircan",
+        //     soyisim : "Demir",
+        //     numara : 123456,
+        //     diller : ["PHP", "Java" , "Python"],
+        //     adres : {  // obje içinde obje oluşturma
+        //         sokak:"128.sokak",
+        //         mahalle : "yakuplu mahallesi",
+        //     }
+        // };
+
+        // console.log(calisan.soyisim)
+        // console.log(calisan.numara)
+        // console.log(calisan.adres.sokak)
+
+        //----------------------------------------------------------------------------------
+        
+        // var calisan = {
+        //     isim : "Emircan",
+        //     soyisim : "Demir",
+        //     numara : 123456,
+        //     diller : ["PHP", "Java" , "Python"],
+        //     adres : {  // obje içinde obje oluşturma
+        //         sokak:"128.sokak",
+        //         mahalle : "yakuplu mahallesi"},
+        //     isimbilgileri : function()
+        //     {
+        //         return "İsim :" + this.isim + " Soyisim :" + this.soyisim
+
+        //     }
+        // };
+
+        // console.log(calisan.isimbilgileri())
+
+        //----------------------------------------------------------------------------------
+
+        // var calisan = new Object();
+        
+        // calisan.isim = "Emircan" ;
+        // calisan.soyisim = "Demir" ;
+        // calisan.isimBilgileri = function() {
+        //     return "İsim Bilgileri : " + this.isim + "" + this.soyisim
+        // };
+
+        // console.log(calisan.isimBilgileri())
+
+        //-----------------------------------------------------------------------------------
+
+        // function calisan(isim,soyisim,numara) {
+        //     this.isim = isim;
+        //     this.soyisim = soyisim ;
+        //     this.numara = numara ;
+        //     this.bilgileriGöster = function(){
+        //         return "İsim : " + this.isim + "\nSoyisim : " + this.soyisim + "\nNumara : " + this.numara
+        //     }
+        // }
+
+        // var calisan1 = new calisan ("Emircan" , "Demir" , 123456);
+        // var calisan2 = new calisan ("Mustafa" , "Murat" , 456789);
+        
+        // console.log(calisan1.bilgileriGöster())
+        // console.log(calisan2.bilgileriGöster())
+
+        //------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

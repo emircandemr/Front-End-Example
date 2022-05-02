@@ -1,0 +1,180 @@
+/* font-family: 'Unna', serif; */
+
+.backg{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Unna', serif !important;
+}
+
+.dateBox{
+    width: 50% !important;
+    margin: auto !important;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 1px solid rgba(17, 14, 14, 0.3);
+    text-align: center !important;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.clockBox{
+    font-size: 48px;
+}
+.date{
+    font-size: 20px;
+}
+
+.cityBox{
+    height: 20vh !important;
+    width: 50% !important;
+    margin: auto !important;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    border: 1px solid rgba(17, 14, 14, 0.3);
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.locationimg{
+    position:absolute;
+    top: 0px;
+    left: 20px;
+    text-align:left;
+    font-size: 30px;
+}
+
+
+.location{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif; 
+    /* border-right: 1px solid rgba(255, 255, 255, 0.3); */
+    border-right: 1px solid rgb(0, 0, 0);
+
+    
+}
+
+.country {
+    width: 50% !important;
+    text-align: center;
+    background-color: transparent !important;
+    font-size: 18px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    border: 1px solid rgba(17, 14, 14, 0.3) !important;
+    
+}
+
+.country:hover{
+    background-color: #1e272e !important;
+    color: #fff !important;
+}
+
+
+
+.timeLeftBox{
+    width: 50%;
+    min-width: 50%;
+    overflow: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timeLeftText{
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+
+}
+.timeLeft{
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.timeBox{
+    height: 35vh !important;
+    width: 50% !important;
+    margin: auto !important;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    border: 1px solid rgba(17, 14, 14, 0.3);
+    text-align: center !important;
+}
+
+.stageBox{
+    width: 100%;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    overflow: auto;
+
+}
+
+.stage{
+    width: 25% !important;
+    height: 25% !important;
+    margin-right: 15px;
+    min-width: 70px !important;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+}
+
+.stageText{
+    font-size: 18px;
+    font-family: 'Anton', sans-serif;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+}
+
+.stageTime{
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+}
+
+.stage:hover{
+    background-color: #1e272e;
+    color: #fff;
+}
+
+
+#timeLeft{
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#secondLeft{
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1{
+            margin-bottom: 5px;
+        }
+        #div1{
+            width: 100%;
+            height: 70px;
+            background-color: aquamarine;
+        }
+        #div2{
+            width: 100%;
+            height: 70px;
+            background-color: seagreen;
+        }
+        #div3{
+            width: 100%;
+            height: 70px;
+            background-color: violet;
+        }
+        #div4{
+            width: 100%;
+            height: 70px;
+            background-color: darkgoldenrod;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "div1" class="class1">
+        <span> Hello World </span>
+    </div>
+    <div id = "div2" class="class1">
+        <button id="btn"> Tıkla Beni</button>
+    </div>
+    <div id = "div3" class="class1"></div>
+    <div id = "div4"></div>
+
+
+    <!-- Script -->
+
+    <script>
+        
+        //------------------TAGLERE ULAŞMA-------------------------------------
+
+        // // id yazılı taglere ulaşmak için kullanılır.
+        // document.getElementById("div1").innerHTML = "Hello World"
+
+        // // class olan taglere ulaşılır.
+        // document.getElementsByClassName("class1")[1].innerHTML = "Hello World"
+
+        // // Direk taglere ulaşır.
+        // document.getElementsByTagName("div")[0].innerHTML = "Hello World"
+
+        // document.querySelectorAll("div")[0].innerHTML = "Hello World" // yukardakinin aynısı
+
+        // document.getElementById("div1").id = "yeniid" // id ismini değiştirme
+
+        //-------------------YAZI YAZDIRMA---------------------------------------
+
+        // div1 id lı elementin içindeki yazıyı div 4 de ekledik.
+        // let v = document.getElementById("div1").innerHTML;
+
+        // document.getElementById("div4").innerHTML = v;
+
+        //-------------------CSS DEĞİŞTİRME---------------------------------------
+
+        // document.getElementById("div1").style.backgroundColor = "red";
+
+        // // 2. yol
+
+        // let stil = document.getElementById("div1");
+
+        // stil.style.color = "white";
+        // stil.style.backgroundColor = "blue";
+
+        //---------------------------EVENT-----------------------------------------
+
+        // "Tıkla Beni" butonuna tıkladığın zaman div3 background değişcek
+
+        // document.getElementById("btn").addEventListener("click" , ahmet);
+
+        // function ahmet(){
+        //     document.getElementById("div3").style.backgroundColor= "yellow";
+
+        // }
+
+
+        //-----------------------Kullanıcıdan isim alma-----------------------------
+
+        // document.getElementById("btn").addEventListener("click", isimalma);
+
+        // function isimalma() {
+        //     let isim = prompt("İsminiz : ");
+        //     document.getElementById("div2").innerHTML = "Hoşgeldiniz " + isim;
+        //     document.getElementById("div2").style.backgroundColor = "blue";
+        //     document.getElementById("div2").style.color = "white";
+            
+        // }
+
+        //-----------------------ELEMENT EKLEME--------------------------------------
+
+        // let x = document.createElement("p"); // p tagı oluşturduk
+
+        // let y = document.createTextNode("Bu bir JS eklemesidir"); // Tagın içerine yazılcak text yazısı
+
+        // x.appendChild(y);
+
+        // let div = document.getElementById("div1");
+
+        // div.appendChild(x);
+            
+        // //öncesine ekleme ;
+
+        // div.insertBefore(x,document.getElementsByTagName("span"));
+        
+        // div.setAttribute("id","div10"); // div1 idlı elemanın id adını değiştirdik..
+        
+        //-----------------------------------------------------------------------------------------
+
+        // let hangidivinclassıeklencekse = document.getElementById("div4");  //div4 id lı elemente class ekledik
+
+        // let classAdiOlusturma = document.createAttribute("class");
+
+        // classAdiOlusturma.value = "jsClass" ;
+
+        // hangidivinclassıeklencekse.setAttributeNode(classAdiOlusturma);
+
+        //-------------------------Tüm Elementlere style ekleme------------------------------------
+
+        //diyelim ki bir div etiketin var ve içinde birden çok p etiketi var bu p etiketinin hepsinde renk olarak mavi style verceksen o zman ;
+
+        // let item1 = document.getElementsByTagName("p");
+
+        // for ( i =0 ; i < item1.length ; i++ ) {
+        //     item1[i].style.color = "blue"; 
+        // }
+        
+        //------------------------------BOS - CONFİRM------------------------------------------------
+
+        // let confirmdegiskeni = window.confirm("Emin misin gardaşş");
+
+        // if (confirmdegiskeni) {
+        //     document.write("Eminmiş");
+        // }
+        // else {
+        //     document.write("Değilmiş");
+        // }
+
+        //--------------------------------ZAMANLAMA---------------------------------------------------
+
+        // setInterval((deneme) => {
+        //     document.write("zamanlama")
+        // }, 2000);
+        //setTimeout ile yazarsan 2s içinde sadece 1 kere döner Interval ise sonsuza kadar döner
+
+    </script>
+    
+</body>
+</html>

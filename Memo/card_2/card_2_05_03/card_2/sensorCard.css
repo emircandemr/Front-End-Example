@@ -1,0 +1,205 @@
+
+    .sensor_card_list{
+  list-style: none;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.sensor_card_box{
+  width:195px;
+  height:180px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid sandybrown; */
+  position: relative;
+  overflow: hidden;
+  margin:0 5px 0 5px ;
+}
+
+.card-content{
+  width: 180px;
+  height: 120px;
+  position: absolute; 
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+  background-color: #ddd;
+  cursor: pointer;
+  /* overflow-x:hidden; */
+}
+
+
+.card-content:hover .sensor_value_box {
+  transform: translate(90px);
+  /* background-color: transparent; */
+  border-radius: 15px;
+  animation: none;
+  border: none;
+}
+.card-content:hover .device_name_box table{
+  border: none;
+}
+
+.card-content:hover .device_name_box {
+  transform: translate(-90px);
+  /* background-color: transparent; */
+  border-radius: 15px;
+  animation: none;
+  border: none;
+}
+
+.device_name_box.alarm{
+  animation: alarm 2s infinite;
+}
+
+.sensor_value_box.alarm{
+  animation: alarm 2s infinite;
+}
+
+@keyframes alarm {
+  85% {background-color: #bb3f3f ;
+    color:rgb(255, 255, 255);
+}
+}
+
+.device_name_box.critic{
+  animation: critic 2s infinite;
+}
+
+.sensor_value_box.critic{
+  animation: critic 2s infinite;
+}
+
+@keyframes critic {
+  85% {background-color: #e0d531 ;
+    color:rgb(43, 35, 35);}
+}
+
+.device_name_box.na{
+  animation: na 2s infinite;
+}
+
+.sensor_value_box.na{
+  animation: na 2s infinite;
+}
+
+@keyframes na {
+  85% {background-color:#2e3033 ;
+    color:rgb(255, 255, 255);
+  }
+}
+
+
+.update_box{
+  height: 100%;
+  width: 100%;
+}
+
+.update_box table{
+  width:100%;
+  height: 100%;
+  text-align: center;
+}
+
+.update_box .update{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 0.7em;
+  padding: 10px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+
+.device_name_box{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: #F5F5F5;
+  transition: 1.2s;
+}
+.device_name_box .aside_name{
+  font-size: 0.7em;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.device_name_box table{
+  width:100%;
+  height: 100%;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+
+.sensor_value_box{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  background-color: #F5F5F5;
+  transition: 1.2s;
+}
+
+.sensor_value_box table{
+  width:100%;
+  height: 100%;
+  text-align: center;
+}
+
+.sensor_box_img{
+  background-color: #fff;
+  top:0;
+  margin-top: -25px;
+  left:50%;
+  transform: translateX(-50%);
+  position: absolute; 
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 2 !important;
+}
+
+.sensor_icon{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sensor_value_unit{
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  top:0;
+  right:0;
+  border-bottom-left-radius:50%;
+  border-top-right-radius: 15px;
+  min-width: 40px;
+  min-height: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sensor_value_unit p{
+  font-size: 0.75em;
+  text-align: center;   
+}
+

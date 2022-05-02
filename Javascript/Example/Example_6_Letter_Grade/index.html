@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="container">
+            <div class="score">
+                <div class="quizBox">
+                    <p>Quiz</p>
+                    <input id="quizInput" class="scoreinput" type="text">
+                </div>
+                <div class="quizBox">
+                    <p>MidTerm</p>
+                    <input id="midtermInput" class="scoreinput" type="text">
+                </div>
+                <div class="quizBox">
+                    <p>Final</p>
+                    <input id="finalInput" class="scoreinput" type="text">
+                </div>
+            </div>
+
+
+            <div class="calculate">
+                <button  class="btn" onclick="print()" id="Calculate">Calculate</button>
+                <button  class="btn" onclick="clean()" id="Clean">Clean</button>
+            </div>
+            <div class="result">
+                <div id= "lettergrade" class="letter_grade">
+                    <p>Letter Grade:</p>
+                    <!-- <input id="Grade" class="scoreinput" type="text"> -->
+                    <div id="Grade"></div>
+                </div>
+            </div>
+     
+
+        </div>
+    
+    </div>
+ 
+
+
+    <script src="script.js"></script>
+</body>
+</html>

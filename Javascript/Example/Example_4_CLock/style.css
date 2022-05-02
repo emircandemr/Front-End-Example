@@ -1,0 +1,62 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background: rgb(221,221,221);
+    background: linear-gradient(0deg, rgba(221,221,221,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.container{
+    margin: auto;
+    width: 50%;
+    margin-top: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#saat{
+    width: 30%;
+    height: 100%;
+    background-color: #ddd;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+
+}
+
+#dakika{
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #ddd;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+
+
+}
+
+#saniye{
+    width: 30%;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #ddd;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+
+
+
+}
