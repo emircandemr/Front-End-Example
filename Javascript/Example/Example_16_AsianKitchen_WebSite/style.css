@@ -2,13 +2,6 @@
   box-sizing: border-box;
   
 }
-
-
-/* font-family: 'Lobster', cursive;
-#191919 siyah
-rgba(205, 0, 0, 0.605) kırmızı
-*/
-
 body {
   margin: 0;
   padding: 0;
@@ -17,7 +10,6 @@ body {
   font-family: "Zilla Slab", serif;
 
 }
-
 h2 {
   font-family: "Great Vibes", cursive;
   font-size: 3rem;
@@ -30,7 +22,6 @@ h2 {
 .menu {
   margin-top: 20px;
 }
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -40,7 +31,6 @@ h2 {
 .btn-item {
   margin-left: 15px;
 }
-
 .photo {
   width: 100%;
   height: 100%;
@@ -61,15 +51,12 @@ h2 {
   justify-content: space-between;
   border-bottom: 1px solid black;
 }
-
 h4 {
   color: #e00a00;
 }
-
 .menu-text {
   padding-top: 20px;
 }
-
 .mealBox{
   width: 550px;
   height: 250px;
@@ -77,7 +64,6 @@ h4 {
   margin-right:50px;
   margin-left: 40px;
   margin-bottom: 50px;
-  /* From https://css.glass */
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.8px);
@@ -88,26 +74,22 @@ h4 {
   align-items: center;
   transition: all 0.1 ease;
 }
-
 .section-center{
   margin: auto !important;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
 }
-
 .imgBox{
   width: 40%;
   height: 80%;
   margin-right: 5px;
 }
-
 .contentBox{
   width: 55%;
   height: 80%;
   position: relative;
 }
-
 .mealTitle{
   color: rgba(205, 0, 0, 0.605);
   font-weight:bolder;
@@ -117,14 +99,12 @@ h4 {
   text-align: center;
   
 }
-
 .mealText{
   text-align: center;
   padding: 15px;
   font-family: 'Fjalla One', sans-serif;
   font-style: italic;
 }
-
 .price{
   width: auto;
   height: 25%;
@@ -140,26 +120,20 @@ h4 {
   font-family: 'Orelega One', cursive;
   font-style: italic;
 }
-
 .mealHeader{
   border-bottom: 0.05em solid #191919;
 }
-
 .mealBox:hover{
   background-color: #191919;
   color: #ddd;
   transition: 0.1s;
 }
-
 .mealBox:hover .mealHeader{
   border-bottom: 0.02em solid #ddd;
 }
-
 .mealBox:hover .photo {
   border: 0.1rem solid #ddd;
-
 }
-
 .buttonClass {
   /* height: 30px; */
   background-color: rgba(205, 0, 0, 0.605);
@@ -172,7 +146,6 @@ h4 {
   padding: 8px;
   border: 0.1em solid #191919;
 }
-
 .welcome{
   width: auto;
   height: auto;
@@ -184,4 +157,20 @@ h4 {
   letter-spacing: 40px;
   font-size: 100px !important;
   font-weight: bolder;
+}
+@media only screen and (max-width:550px){
+  .mealText{
+    padding: 10px;
+    font-size: 12px;
+  }
+  .price{
+    position: absolute;
+    bottom: -20px;
+  }
+  .price h3{
+    font-size: 18px;
+  }
+  .mealTitle{
+    font-size: 25px;
+  }
 }

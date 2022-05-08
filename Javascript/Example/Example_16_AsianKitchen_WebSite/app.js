@@ -181,3 +181,7 @@ const setMealCard = (title,price,img,desc) => {
   </div>`
   containerDOM.innerHTML += temptHTML;
 }
+
+menu.forEach(element => {
+  setMealCard(element.title,element.price,element.img,element.desc)
+});
