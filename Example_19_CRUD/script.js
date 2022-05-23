@@ -6,6 +6,8 @@ const tbody = document.querySelector("#tbody")
 const addBtn = document.querySelector("#addBtn");
 
 
+let myModal = document.querySelector("#NewEmployee");
+let modalElement = new bootstrap.Modal(myModal);
 
 let count = 0;
 
@@ -108,8 +110,10 @@ const addEmployee = () => {
 
 
 const addNewEmployeeFunc = () => {
+    
+    modalElement.show()
 
-    $('#NewEmployee').modal('show');
+    // $('#NewEmployee').modal('show');
 }
 
 
@@ -118,7 +122,9 @@ addBtn.addEventListener("click" , function() {
     addEmployeeObject();
 
 
-    $('#NewEmployee').modal('hide');
+    modalElement.hide()
+
+    // $('#NewEmployee').modal('hide');
 
 
 });
@@ -126,7 +132,9 @@ addBtn.addEventListener("click" , function() {
 
 function editEmployeeInfo(id) {
 
-    $('#editEmployee').modal('show');
+    modalElement.show()
+
+    // $('#editEmployee').modal('show');
 
     let localStorageEmployee = JSON.parse(localStorage.getItem("employeeInfo"));
 
@@ -151,7 +159,8 @@ function editEmployeeInfo(id) {
 
         localStorage.setItem("employeeInfo", JSON.stringify(localStorageEmployee));
         
-        $('#editEmployee').modal('hide');
+        // $('#editEmployee').modal('hide');
+        modalElement.hide()
 
         addEmployee();
 
