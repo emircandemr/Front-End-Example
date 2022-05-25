@@ -85,6 +85,7 @@ const addEmployee = () => {
 
 
     for (let index = 0; index < localStorageEmployee.length; index++) {
+
         tempHTML +=   `
         <tr class="tableContent">
         <td>${localStorageEmployee[index].id}</td>
@@ -117,7 +118,6 @@ const addNewEmployeeFunc = () => {
     
     modalAdd.show()
 
-    // $('#NewEmployee').modal('show');
 }
 
 
@@ -125,11 +125,7 @@ addBtn.addEventListener("click" , function() {
 
     addEmployeeObject();
 
-
     modalAdd.hide()
-
-    // $('#NewEmployee').modal('hide');
-
 
 });
 
@@ -138,16 +134,24 @@ function editEmployeeInfo(id) {
 
     modalEdit.show()
 
-    // $('#editEmployee').modal('show');
 
     let localStorageEmployee = JSON.parse(localStorage.getItem("employeeInfo"));
 
 
-    document.querySelector("#editFirstName").value = localStorageEmployee[id].firstName;
-    document.querySelector("#editLastName").value = localStorageEmployee[id].lastName;
-    document.querySelector("#editEmail").value = localStorageEmployee[id].email;
-    document.querySelector("#editPhone").value = localStorageEmployee[id].phone;
-    document.querySelector("#editLocation").value = localStorageEmployee[id].location;
+    let editEmployee = localStorageEmployee.find(item => item.id === id)
+
+    document.querySelector("#editFirstName").value = editEmployee.firstName;
+    document.querySelector("#editLastName").value = editEmployee.lastName;
+    document.querySelector("#editEmail").value = editEmployee.email;
+    document.querySelector("#editPhone").value = editEmployee.phone;
+    document.querySelector("#editLocation").value = editEmployee.location;
+
+
+    // document.querySelector("#editFirstName").value = localStorageEmployee[id].firstName;
+    // document.querySelector("#editLastName").value = localStorageEmployee[id].lastName;
+    // document.querySelector("#editEmail").value = localStorageEmployee[id].email;
+    // document.querySelector("#editPhone").value = localStorageEmployee[id].phone;
+    // document.querySelector("#editLocation").value = localStorageEmployee[id].location;
 
     const saveBtn = document.querySelector("#saveBtn");
 
@@ -163,7 +167,6 @@ function editEmployeeInfo(id) {
 
         localStorage.setItem("employeeInfo", JSON.stringify(localStorageEmployee));
         
-        // $('#editEmployee').modal('hide');
         modalEdit.hide()
 
         addEmployee();
@@ -176,12 +179,15 @@ function delEmployee(id){
 
     let localStorageEmployee = JSON.parse(localStorage.getItem("employeeInfo"));
 
-    let index = localStorageEmployee.findIndex(x=>x.id==id);
+    // let index = localStorageEmployee.findIndex(x=>x.id==id);
+
+    let deleteEmployee = localStorageEmployee.find(item => item.id === id)
+    let deleteEmployeeID = deleteEmployee.id
 
 
-    localStorageEmployee = localStorageEmployee.filter(item => item !== localStorageEmployee[index])
+    localStorageEmployee = localStorageEmployee.filter(item => item.id !== deleteEmployeeID)
 
-    data.splice(index,1)
+    data.splice(deleteEmployeeID,1)
 
 
     localStorage.setItem("employeeInfo", JSON.stringify(localStorageEmployee));
@@ -194,3 +200,22 @@ function delEmployee(id){
 addButton.addEventListener("click" , addNewEmployeeFunc);
 
 addEmployee();
+
+{/* <tr class="tableContent">
+<td>${localStorageEmployee[index].id}</td>
+<td>${localStorageEmployee[index].firstName}</td>
+<td>${localStorageEmployee[index].lastName}</td>
+<td>${localStorageEmployee[index].email}</td>
+<td>${localStorageEmployee[index].phone}</td>
+<td>${localStorageEmployee[index].location}</td>
+<td>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="edit me-2" onclick=editEmployeeInfo(${localStorageEmployee[index].id})>
+            <i class="fa-solid fa-pen-to-square"></i>
+        </button>
+        <button type="button" class="edit">
+            <i class="fa-solid fa-trash-can" onclick=delEmployee(${localStorageEmployee[index].id})></i>
+        </button>
+    </div>
+</td>
+</tr> */}
